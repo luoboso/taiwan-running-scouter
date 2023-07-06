@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="跑步戰鬥力" />
+    <meta property="og:description" content="你跑步的戰鬥力是多少？！" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <title>跑步戰鬥力</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.14.0/js/canvas-to-blob.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=c8733ae917b63c04f01617cb9dfd97c50a1f7b2e" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M39W453');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <div id="contextMenu" class="contextMenu">
+      <div class="row menuItem menuTitle">
+        <p id="menuTitle"></p>
+      </div>
+      <div id="lv4" class="row menuItem menuButton lv4-border">
+        <p>總一</p>
+      </div>
+      <div id="lv3" class="row menuItem menuButton lv3-border">
+        <p>總排</p>
+      </div>
+      <div id="lv2" class="row menuItem menuButton lv2-border">
+        <p>分一</p>
+      </div>
+      <div id="lv1" class="row menuItem menuButton lv1-border">
+        <p>分組</p>
+      </div>
+      <div id="lv0" class="row menuItem menuButton lv0-border">
+        <p>準備上台</p>
+      </div>
+    </div>
+
+    <div class="lockedMenu">
+      <a href="https://portaly.cc/luoboso" target="_blank">
+      <svg class="icon"  version="1.0" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 90.000000 90.000000"
+      preserveAspectRatio="xMidYMid meet">
+      <g transform="translate(0.000000,90.000000) scale(0.100000,-0.100000)"  stroke="none">
+      <path d="M181 833 l2 -68 -56 0 c-74 0 -87 -14 -50 -54 22 -25 41 -34 89 -42 67 -12 84 -30 84 -89 0 -28 -3 -30 -38 -30 -21 0 -41 -3 -45 -6 -9 -9 17 -55
+      42 -76 31 -26 27 -66 -10 -104 -31 -32 -32 -34 -22 -84 9 -43 7 -57 -8 -88 -28 -53 -25 -82 7 -82 21 0 25 -4 22 -22 -4 -29 -44 -49 -73 -38 -27 10 -35 4
+      -35 -27 0 -22 4 -23 65 -23 l65 0 0 40 c0 43 8 48 55 30 23 -9 26 -8 21 6 -3 8 -6 17 -6 20 0 2 -13 10 -30 19 -16 9 -30 20 -30 25 0 19 33 40 65 40 31 0
+      35 -3 40 -34 6 -28 13 -35 44 -44 21 -7 47 -25 59 -42 13 -17 27 -28 32 -25 4 3 11 29 15 58 14 110 41 172 71 160 12 -4 14 -21 11 -85 -5 -108 -4 -108 206
+      -67 95 19 86 33 -32 45 -60 6 -71 9 -71 25 0 11 4 19 10 19 5 0 9 16 8 35 -1 19 5 42 13 51 11 14 11 18 -4 29 -20 14 -23 55 -5 73 9 9 7 16 -7 32 -24 27
+      -33 25 -47 -9 -27 -62 -136 -120 -139 -73 -2 29 3 56 11 67 5 6 11 27 15 47 6 34 10 37 48 43 59 10 74 20 86 58 19 55 2 82 -58 97 -55 13 -60 23 -36 69 16
+      32 24 37 89 46 58 9 67 22 20 31 -44 8 -52 26 -30 70 9 19 16 37 16 39 0 3 -30 5 -68 5 l-67 0 -20 -57 c-19 -55 -22 -58 -54 -58 -30 0 -36 4 -45 32 -6
+      18 -23 44 -38 58 -24 22 -36 25 -108 25 l-81 0 2 -67z m289 -144 c0 -29 -18 -59 -35 -59 -11 0 -15 12 -15 40 0 36 3 40 25 40 19 0 25 -5 25 -21z m120 -96
+      c0 -32 -35 -73 -63 -73 -15 0 -18 5 -13 25 15 60 25 75 51 75 20 0 25 -5 25 -27z m-262 -75 c3 -15 -4 -18 -32 -18 -34 0 -47 15 -29 34 13 13 58 1 61 -16z
+      m152 -47 c0 -5 -12 -29 -26 -55 -23 -42 -25 -50 -14 -77 12 -28 8 -135 -7 -197 -6 -25 -30 -29 -58 -8 -19 14 -19 15 -2 33 23 26 22 43 -8 83 -23 31 -24
+      36 -10 57 22 33 19 40 -25 47 -22 3 -40 8 -40 11 0 2 14 24 31 49 20 30 41 49 62 55 42 12 97 13 97 2z m138 -153 c-6 -16 -36 -34 -44 -25 -9 9 15 37 33 37
+      8 0 13 -5 11 -12z"/>
+      </g>
+      </svg>
+      </a>
+      <button id="saveAs" class="button">產生圖片</a>
+      </div>
+
+    <div class="default">
+      <div class="map">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="map" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 750 1124" style="enable-background:new 0 0 750 1124;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#444444;}
+          .st1{fill:#555555;}
+          .city{fill:#FFFFFF;}
+          .st3{font-family:"Microsoft JhengHei"}
+          .st4{font-size:52.1035px;}
+          .st5{font-size:72px;font-weight:bolder}
+          .st6{font-size:20px;}
+          .lv4{fill:#A229AA;}
+          .lv3{fill:#F23225;}
+          .lv2{fill:#FAB229;}
+          .lv1{fill:#ACE229;}
+          .lv0{fill:#292929;stroke:#555555;stroke-miterlimit:10;}
+          .st12{fill:#555555;}
+          .st13{fill:#FFFFFF;stroke:#e5e5e5;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:10;}
+          .st14{fill:#FFFFFF;stroke:#e5e5e5;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+          .st15{fill:#FFFFFF;stroke:#e5e5e5;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
+          .st16{font-size:23.0006px;}
+          .st17{fill:#FFFFFF;stroke:#e5e5e5;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        </style>
+        <rect x="-0.2" y="0" class="st0" width="750.2" height="1124"/>
+        <path class="st1" d="M719,1102H28c-2.8,0-5-2.2-5-5v-55.3c0-2.8,2.2-5,5-5h691c2.8,0,5,2.2,5,5v55.3C724,1099.8,721.8,1102,719,1102  z"/>
+        <text transform="matrix(1 0 0 1 46.5859 91.9209)"><tspan x="0" y="0" class="city st3 st4">🧐跑步戰鬥力 </tspan><tspan id="total" x="359.9" y="0" class="city st3 st5">0</tspan></text>
+        <text transform="matrix(1 0 0 1 104.6665 1075.2633)" class="city st3 st6">總一</text>
+        <circle class="lv4" cx="69.3" cy="1069.3" r="15"/>
+        <text transform="matrix(1 0 0 1 233.336 1075.2623)" class="city st3 st6">總排</text>
+        <circle class="lv3" cx="199" cy="1069.3" r="15"/>
+        <text transform="matrix(1 0 0 1 362.0052 1075.2633)" class="city st3 st6">分一</text>
+        <circle class="lv2" cx="328.7" cy="1069.3" r="15"/>
+        <text transform="matrix(1 0 0 1 490.6747 1075.2633)" class="city st3 st6">分組</text>
+        <circle class="lv1" cx="458.3" cy="1069.3" r="15"/>
+>     <text transform="matrix(1 0 0 1 619.3439 1075.2633)" class="city st3 st6">準備上台</text>
+        <circle class="lv0" cx="588" cy="1069.3" r="15"/>
+        <g>
+          <polygon id="屏東1" class="st13" points="366,979 349.3,894 288.1,834.2 302.4,749.9 384.7,712.7 411.5,760.7 367.7,828.1 405.8,897.9 401.7,988.4 384.7,959.7 	"/>
+          <polygon id="台東1" class="st13" points="405.8,897.9 367.7,828.1 411.5,760.7 384.7,712.7 438.1,628.7 498.1,677.8 533.7,595.7 552.2,595.8 509.3,725.4 437.8,795.8 	"/>
+          <polygon id="花蓮" class="st13" points="619.8,374.7 552.2,595.8 533.7,595.7 498.1,677.8 424.9,618.1 488,542.1 533.7,366.6 576.4,372.8 583.6,357.7 	"/>
+          <polygon id="宜蘭1" class="st13" points="619.8,374.7 583.6,357.7 576.4,372.8 533.7,366.6 514.5,315.8 554.8,282.3 626.7,217.8 675,199.4 630.4,256.9 642.3,318.1 	"/>
+          <polygon id="高雄" class="st13" points="288.1,834.2 240.6,783.7 229.3,725.6 278.9,724.2 348.9,632.9 415.5,583.2 442.5,596.8 424.9,618.1 438.1,628.7 384.7,712.7 302.4,749.9 	"/>
+          <polygon id="台南" class="st13" points="229.3,725.6 225.9,705.6 201.7,691.7 217.8,626.1 284.1,601.9 309.7,606.9 337.6,647.7 278.9,724.2 "/>
+          <polygon id="嘉義" class="st13" points="217.8,626.1 217.8,571.7 302.6,546.1 374.4,552.2 415.5,583.2 348.9,632.9 337.6,647.7 309.7,606.9 284.1,601.9 	"/>
+          <polygon id="南投" class="st13" points="527.2,391.6 488,542.1 442.5,596.8 415.5,583.2 374.4,552.2 340.9,549.4 343.6,451 	"/>
+          <polygon id="雲林" class="st13" points="217.8,571.7 247.4,494.2 342.2,503.9 340.9,549.4 302.6,546.1 	"/>
+          <polygon id="彰化" class="st13" points="302.4,398.1 247.4,494.2 342.2,503.9 343.6,451 	"/>
+          <polygon id="台中" class="st13" points="341.3,342.5 302.4,398.1 343.6,451 527.2,391.6 533.7,366.6 514.5,315.8 421.7,374.7 380.6,374.7 "/>
+          <polygon id="苗栗" class="st13" points="393.6,270.5 341.3,342.5 380.6,374.7 421.7,374.7 483,334.9 437.8,326 444,298.1 	"/>
+          <polygon id="新竹" class="st13" points="428.2,224 393.6,270.5 444,298.1 437.8,326 484.1,335.1 514.5,315.8 526.4,305.9 504.5,262.4 	"/>
+          <polygon id="桃園" class="st13" points="496,165.8 527.2,193.5 516.7,234.2 554.8,282.3 526.4,305.9 504.5,262.4 428.2,224 	"/>
+          <polygon id="新北" class="st13" points="527.2,156.5 496,165.8 527.2,193.5 516.7,234.2 554.8,282.3 626.7,217.8 675,199.4 652.7,185.9 651.1,165.8 626.7,165.8 602.5,158.9 605.1,142.8 552.2,125.1 	"/>
+          <polygon id="台北" class="st13" points="542.3,165.8 548,204.2 583.6,216.3 595.9,199.4 566.2,150.3 	"/>
+          <path id="金門" class="st14" d="M112.2,335.9c0,0,2.2,26.9,3.3,26.1c1.1-0.8,20.4-13.1,20.4-13.1l25.7,10.5l-2.8-34.8l-22.9,12.7L112.2,335.9  z"/>
+          <polygon id="澎湖1" class="st14" points="115.1,522.2 126.5,537.9 140,554.5 109,570 103,557 117.6,543.7 106.8,526.2 	"/>
+          <polygon id="澎湖2" class="st14" points="103,533.1 94.5,529.6 84.3,554.5 94.5,554.5 	"/>
+          <polygon id="澎湖3" class="st14" points="93.7,591.2 105.7,598.7 93.7,608.8 	"/>
+          <polygon id="馬祖1" class="st15" points="108.7,170.3 112.2,185.1 92.4,185.1 	"/>
+          <path id="馬祖2" class="st15" d="M82.6,193.9c0.6,0,19.5,4.7,19.5,4.7l-16.6,10.6L82.6,193.9z"/>
+          <text transform="matrix(1 0 0 1 318.8428 799.5312)" class="st3 st16 city">屏東</text>
+          <text transform="matrix(1 0 0 1 325.2979 695.7734)" class="st3 st16 city">高雄</text>
+          <text transform="matrix(1 0 0 1 234.8994 672.2617)" class="st3 st16 city">台南</text>
+          <text transform="matrix(1 0 0 1   85.5078 507.6504)" class="st3 st16 city">澎湖</text>
+          <text transform="matrix(1 0 0 1   92.9629 320.0596)" class="st3 st16 city">金門</text>
+          <text transform="matrix(1 0 0 1 122.9629 202.6660)" class="st3 st16 city">馬祖</text>
+          <text transform="matrix(1 0 0 1 279.8779 585.8145)" class="st3 st16 city">嘉義</text>
+          <text transform="matrix(1 0 0 1 264.5449 531.9668)" class="st3 st16 city">雲林</text>
+          <text transform="matrix(1 0 0 1 279.8779 474.7217)" class="st3 st16 city">彰化</text>
+          <text transform="matrix(1 0 0 1 337.9268 406.8701)" class="st3 st16 city">台中</text>
+          <text transform="matrix(1 0 0 1 367.0664 342.2969)" class="st3 st16 city">苗栗</text>
+          <text transform="matrix(1 0 0 1 435.5566 276.6172)" class="st3 st16 city">新竹</text>
+          <text transform="matrix(1 0 0 1 462.1357 226.0161)" class="st3 st16 city">桃園</text>
+          <text transform="matrix(1 0 0 1 538.5488 242.1167)" class="st3 st16 city">新北</text>
+          <text transform="matrix(1 0 0 1 561.3633 323.5898)" class="st3 st16 city">宜蘭</text>
+          <text transform="matrix(1 0 0 1 517.9180 511.1729)" class="st3 st16 city">花蓮</text>
+          <text transform="matrix(1 0 0 1 431.3779 720.7334)" class="st3 st16 city">台東</text>
+          <text transform="matrix(1 0 0 1 545.2627 192.9224)" class="st3 st16 city">台北</text>
+          <text transform="matrix(1 0 0 1 400.5039 507.9443)" class="st3 st16 city">南投</text>
+        </g>
+        <polygon id="台東2" class="st17" points="603,739 619,739 615,757 "/>
+        <polygon id="台東3" class="st17" points="607.5,941.5 625.5,941.5 622.5,952.5 635.5,964.5 630.5,970.5 607.5,953.5 "/>
+        <polygon id="屏東2" class="st17" points="270.5,874.5 276.5,882.5 263.5,889.5 "/>
+        <polygon id="基隆" class="st14" points="603,159 589,166 611,193 623,185 617,176 630.7,167 "/>
+        <text transform="matrix(1 0 0 1 620.2627 149.9224)" class="st3 st16 city">基隆</text>
+        <polygon id="宜蘭2" class="st15" points="662,249 657,253 662,258 667,253 "/>
+        </svg>
+      </div>
+      <div class="bottomBar">
+        <a id="ref" href="https://zhung.com.tw/japanex/" target="_blank">Refer To Japanex</a>&nbsp&nbsp|&nbsp&nbsp
+        <a id="ref" href="https://travel.tonypai.com.tw/" target="_blank">Refer To tonypai</a>
+      </div>
+      </a>
+    </div>
+    <script src="./index.js?v=c8733ae917b63c04f01617cb9dfd97c50a1f7b2e"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M39W453"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

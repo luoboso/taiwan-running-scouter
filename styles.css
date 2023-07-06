@@ -1,0 +1,192 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #444444;
+  margin: 0;
+}
+
+.default {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Fix IE svg issue */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg#map {
+    width: 750px;
+    height: 1124px;
+    max-width: 450px;
+    max-height: 674px;
+  }
+}
+
+.hero {
+  display: block;
+  border: 1px solid #777;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 10px 0;
+}
+
+.row p {
+  margin: 0;
+}
+
+.row p:first-of-type {
+  width: 160px;
+}
+
+.row:last-child {
+  margin: 0;
+}
+
+.contextMenu {
+  width: 100px;
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+}
+
+.menuItem {
+  margin: 0;
+  padding: 5px 10px;
+  border-bottom: 1px solid #777;
+}
+
+.menuItem:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.menuItem:last-child {
+  border-bottom: 1px solid transparent;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.menuTitle {
+  margin: 0;
+  background: #eee;
+}
+
+.menuTitle p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.menuButton {
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  background: #eee;
+}
+
+.lv4-border {
+  border-right: 10px solid #A229AA;
+}
+
+.lv3-border {
+  border-right: 10px solid #F23225;
+}
+
+.lv2-border {
+  border-right: 10px solid #FAB229;
+}
+
+.lv1-border {
+  border-right: 10px solid #ACE229;
+}
+
+.lv0-border {
+  border-right: 10px solid #292929;
+}
+
+.lockedMenu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+}
+
+@media (min-width:320px)  {
+  .lockedMenu {
+    right: 5px;
+    top: 5px;
+  }
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background: #eee;
+}
+
+.bottomBar {
+  width: 100%;
+  height: 22px;
+  background: #555;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a#ref {
+  font-size: 8px;
+  color: #fff;
+}
+
+.icon {
+  width: 28px;
+  height: 32px;
+  fill: #b23225;
+  background-color:#fff
+}
