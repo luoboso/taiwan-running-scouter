@@ -68,9 +68,15 @@
     var ctx = canvas.getContext("2d");
     canvas.width = 1124;
     canvas.height = 1124;
-    canvg(canvas, svgString);
-    canvas.toBlob(function (blob) { saveAs(blob, 'taiwan.png'); });
-  });
+    ctx.fillStyle = '#444444';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    var img = new Image();
+    img.onload = function() {
+        ctx.drawImage(img, 187, 0);
+        canvas.toBlob(function (blob) { saveAs(blob, 'taiwan.png'); });
+    };
+    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+    });
 
   function bindContextMenu (e) {
     // 180: context menu width, 20: buffer
