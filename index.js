@@ -80,7 +80,7 @@
     var img = new Image();
     img.onload = function() {
         ctx.drawImage(img, 187, 0);
-        canvas.toBlob(function (blob) { saveAs(blob, 'taiwan.png'); });
+        canvas.toBlob(function (blob) { saveAs(blob, 'taiwan-running-scouter.png'); });
     };
     img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
     });
