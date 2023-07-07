@@ -124,10 +124,14 @@ body {
 }
 
 .lv1-border {
-  border-right: 10px solid #ACE229;
+  border-right: 10px solid #FCF229;
 }
 
 .lv0-border {
+  border-right: 10px solid #ACE229;
+}
+
+.lv-1-border {
   border-right: 10px solid #292929;
 }
 
