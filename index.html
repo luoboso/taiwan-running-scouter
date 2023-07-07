@@ -7,7 +7,7 @@
     <meta property="og:description" content="你跑步的戰鬥力是多少？！" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <title>跑步戰鬥力</title>
+    <title>跑步戰鬥力 🧐</title>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.14.0/js/canvas-to-blob.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
@@ -63,7 +63,8 @@
       </g>
       </svg>
       </a>
-      <button id="saveAs" class="button">產生圖片</a>
+      <button id="setName" class="button st3">設定名字</a>
+      <button id="saveAs" class="button st3">儲存圖片</a>
       </div>
 
     <div class="default">
@@ -76,11 +77,11 @@
           .st0{fill:#444444;}
           .st1{fill:#555555;}
           .city{fill:#FFFFFF;}
-          .st3{font-family:"Microsoft JhengHei"}
-          .st4{font-size:52.1035px;}
+          .st3{font-family:"Noto Sans TC", "Microsoft JhengHei";font-weight:bolder}
+          .st4{font-size:48px;}
           .st5{font-size:72px;font-weight:bolder}
           .st6{font-size:20px;}
-          .lv4{fill:#A229AA;}
+          .lv4{fill:#F229EE;}
           .lv3{fill:#F23225;}
           .lv2{fill:#FAB229;}
           .lv1{fill:#ACE229;}
@@ -93,8 +94,11 @@
           .st17{fill:#FFFFFF;stroke:#e5e5e5;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         </style>
         <rect x="-0.2" y="0" class="st0" width="750.2" height="1124"/>
-        <path class="st1" d="M719,1102H28c-2.8,0-5-2.2-5-5v-55.3c0-2.8,2.2-5,5-5h691c2.8,0,5,2.2,5,5v55.3C724,1099.8,721.8,1102,719,1102  z"/>
-        <text transform="matrix(1 0 0 1 46.5859 91.9209)"><tspan x="0" y="0" class="city st3 st4">🧐跑步戰鬥力 </tspan><tspan id="total" x="359.9" y="0" class="city st3 st5">0</tspan></text>
+        <path class="st1" d="M719,1102H28c-2.8,0-5-2.2-5-5v-55.3c0-2.8,2.2-5,5-5h691c2.8,0,5,2.2,5,5v55.3C724,1099.8,721.8,1102,719,1102  z"/>        
+        <text transform="matrix(1 0 0 1 46.5859 91.9209)">
+        <tspan x="0" y="0" class="city st3 st4">🧐 跑步戰鬥力 </tspan>
+        <tspan x="77" y="54" id="name" class="city st3 st4">🏅🥇🥈🥉🏆</tspan>
+        <tspan id="total" x="340" y="0" class="city st3 st5">0</tspan></text>
         <text transform="matrix(1 0 0 1 104.6665 1075.2633)" class="city st3 st6">總一</text>
         <circle class="lv4" cx="69.3" cy="1069.3" r="15"/>
         <text transform="matrix(1 0 0 1 233.336 1075.2623)" class="city st3 st6">總排</text>
@@ -103,7 +107,7 @@
         <circle class="lv2" cx="328.7" cy="1069.3" r="15"/>
         <text transform="matrix(1 0 0 1 490.6747 1075.2633)" class="city st3 st6">分組</text>
         <circle class="lv1" cx="458.3" cy="1069.3" r="15"/>
->     <text transform="matrix(1 0 0 1 619.3439 1075.2633)" class="city st3 st6">準備上台</text>
+        <text transform="matrix(1 0 0 1 619.3439 1075.2633)" class="city st3 st6">準備上台</text>
         <circle class="lv0" cx="588" cy="1069.3" r="15"/>
         <g>
           <polygon id="屏東1" class="st13" points="366,979 349.3,894 288.1,834.2 302.4,749.9 384.7,712.7 411.5,760.7 367.7,828.1 405.8,897.9 401.7,988.4 384.7,959.7 	"/>
@@ -158,7 +162,9 @@
       </div>
       <div class="bottomBar">
         <a id="ref" href="https://zhung.com.tw/japanex/" target="_blank">Refer To Japanex</a>&nbsp&nbsp|&nbsp&nbsp
-        <a id="ref" href="https://travel.tonypai.com.tw/" target="_blank">Refer To tonypai</a>
+        <a id="ref" href="https://travel.tonypai.com.tw/" target="_blank">Refer To tonypai</a>&nbsp&nbsp|&nbsp&nbsp
+        <a id="ref" href="https://www.facebook.com/jybsbj4/" target="_blank">保持心情愉快</a>&nbsp&nbsp|&nbsp&nbsp
+        <a id="ref" href="https://luoboso.github.io/taiwan-running-level/" target="_blank">保持身體健康</a>
       </div>
       </a>
     </div>
